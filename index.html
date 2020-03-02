@@ -1,23 +1,333 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html>
 <head>
-    <title>Best selling Books</title>
-    <meta http-equiv="Cache-Control" content="no-store" />
-    
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js" type="text/javascript"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    
-    <script src="https://connectors.tableau.com/libs/tableauwdc-2.3.latest.js" type="text/javascript"></script>
-    <script src="../js/Books.js" type="text/javascript"></script>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.1.5.1 (Linux)"/>
+	<meta name="author" content="Muthukumar SM"/>
+	<meta name="created" content="2020-02-28T05:32:00"/>
+	<meta name="changedby" content="Muthukumar SM"/>
+	<meta name="changed" content="2020-02-28T06:20:00"/>
+	<meta name="AppVersion" content="16.0000"/>
+	<meta name="DocSecurity" content="0"/>
+	<meta name="HyperlinksChanged" content="false"/>
+	<meta name="LinksUpToDate" content="false"/>
+	<meta name="ScaleCrop" content="false"/>
+	<meta name="ShareDoc" content="false"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 1in }
+		p { margin-bottom: 0.1in; direction: ltr; line-height: 115%; text-align: left; orphans: 2; widows: 2; background: transparent }
+		p.cjk { font-family: "Calibri"; so-language: en-US }
+		a:link { color: #0000ff; text-decoration: underline }
+	</style>
 </head>
+<body lang="en-US" link="#0000ff" vlink="#800000" dir="ltr"><p class="western" style="margin-bottom: 0.11in; line-height: 108%">
+<br/>
+<br/>
 
-<body>
-    <div class="container container-table">
-        <div class="row vertical-center-row">
-            <div class="text-center col-md-4 col-md-offset-4">
-                <button type = "button" id = "submitButton" class = "btn btn-success" style = "margin: 10px;">Best sellers list</button>
-            </div>
-        </div>
-    </div>
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><font size="5" style="font-size: 20pt">Web
+data connector - Steps</font></p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%">This
+document contains the steps required to install basic web data
+connector and try out samples. This should NOT be treated as an
+entire document that can be used for any project/APIs &ndash; as each
+project use case and API requirements are unique.</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><u>Step
+1: Download the Web data connector </u>
+</p>
+<table width="623" cellpadding="7" cellspacing="0">
+	<col width="302"/>
+
+	<col width="292"/>
+
+	<tr valign="top">
+		<td width="302" style="border: 1px solid #000000; padding: 0in 0.08in"><p class="western">
+			Navigate to <font color="#0000ff"><u><a href="https://tableau.github.io/webdataconnector/">https://tableau.github.io/webdataconnector/</a></u></font></p>
+		</td>
+		<td width="292" style="border: 1px solid #000000; padding: 0in 0.08in">
+			<ul><li><p style="margin-bottom: 0in">Read documentation</p>
+				<li><p style="margin-bottom: 0in">Check the API reference</p>
+				<li><p style="margin-bottom: 0in">Click on Get started to go
+				through the details</p>
+				<li><p style="margin-bottom: 0in">Download the API libraries</p>
+			</ul>
+			<p style="margin-left: 0.5in"><br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%">Step
+2: Verify the download folder structure</p>
+<table width="623" cellpadding="7" cellspacing="0">
+	<col width="294"/>
+
+	<col width="299"/>
+
+	<tr valign="top">
+		<td width="294" style="border: 1px solid #000000; padding: 0in 0.08in"><p class="western">
+			Navigate to <a href="https://tableau.github.io/webdataconnector/">the</a>
+			folder wherever you have copied the web data connector files.</p>
+		</td>
+		<td width="299" style="border: 1px solid #000000; padding: 0in 0.08in">
+			<ul><li><p style="margin-bottom: 0in">Verify that there is an
+				example sub folder</p>
+				<li><p style="margin-bottom: 0in">Inside example you should have
+				JS and HTML sub folders.</p>
+				<li><p style="margin-bottom: 0in">Inside HTML sub-folder, Clone
+				earthquakeUSGS.html and create a new file for your API entry
+				point (i.e HTML page)</p>
+				<li><p style="margin-bottom: 0in">Inside JS sub-folder, Clone
+				earthquakeUSGS.js and create a new file for the API logic (i.e
+				calling REST and parsing JSON response) 
+				</p>
+			</ul>
+			<p style="margin-left: 0.5in"><br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%">Step
+3: Modify HTML page</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<table width="623" cellpadding="7" cellspacing="0">
+	<col width="295"/>
+
+	<col width="298"/>
+
+	<tr valign="top">
+		<td width="295" style="border: 1px solid #000000; padding: 0in 0.08in"><p class="western">
+			Modify HTML page to refer to Node JS file.</p>
+		</td>
+		<td width="298" style="border: 1px solid #000000; padding: 0in 0.08in">
+			<ul><li><p style="margin-bottom: 0in">Refer to the file Books.html
+				whereby we have made a reference to Books JS file</p>
+			</ul>
+			<p class="western" style="margin-bottom: 0in"><br/>
+
+			</p>
+			<p class="western" style="margin-bottom: 0in"><br/>
+
+			</p>
+			<p style="margin-left: 0.5in"><br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%; page-break-before: always">
+Step 4: Update Node JS code</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<table width="623" cellpadding="7" cellspacing="0">
+	<col width="296"/>
+
+	<col width="298"/>
+
+	<tr valign="top">
+		<td width="296" style="border: 1px solid #000000; padding: 0in 0.08in"><p class="western">
+			Modify Node JS code to call the API and parse the response</p>
+		</td>
+		<td width="298" style="border: 1px solid #000000; padding: 0in 0.08in">
+			<ul><li><p style="margin-bottom: 0in">Refer to the file Books.html
+				whereby we have made a reference to Books JS file</p>
+			</ul>
+			<p class="western" style="margin-bottom: 0in"><br/>
+
+			</p>
+			<p class="western" style="margin-bottom: 0in"><br/>
+
+			</p>
+			<p style="margin-left: 0.5in"><br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%">Step
+5: Copy the HTML and JS code repository in your webserver</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<table width="623" cellpadding="7" cellspacing="0">
+	<col width="296"/>
+
+	<col width="298"/>
+
+	<tr valign="top">
+		<td width="296" style="border: 1px solid #000000; padding: 0in 0.08in"><p class="western">
+			Webserver deployment</p>
+		</td>
+		<td width="298" style="border: 1px solid #000000; padding: 0in 0.08in">
+			<ul><li><p style="margin-bottom: 0in">Copy the HTML and JS in web
+				server repository.</p>
+				<li><p>Ensure the HTML is accessible through the webbrowser
+				through accessing the webserver</p>
+			</ul>
+		</td>
+	</tr>
+</table>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%">Step
+5.1: Local testing Step</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<table width="623" cellpadding="7" cellspacing="0">
+	<col width="212"/>
+
+	<col width="381"/>
+
+	<tr valign="top">
+		<td width="212" style="border: 1px solid #000000; padding: 0in 0.08in"><p class="western">
+			Node JS server start</p>
+		</td>
+		<td width="381" style="border: 1px solid #000000; padding: 0in 0.08in">
+			<ul><li><p style="margin-bottom: 0in">Navigate to the folder
+				webdataconnector that you have just downloaded from github.</p>
+				<li><p style="margin-bottom: 0in">Start the node server (npm
+				start)</p>
+				<li><p style="margin-bottom: 0in">Verify the IPs that are
+				resulting post the server start</p>
+				<li><p style="margin-bottom: 0in">Samples:</p>
+			</ul>
+			<p style="margin-left: 0.5in; margin-bottom: 0in"><img src="../Web_data_connector_html_6160a87b587b423f.png" name="Picture 1" align="bottom" hspace="1" width="333" height="199" border="0"/>
+</p>
+			<p style="margin-left: 0.5in"><br/>
+
+			</p>
+		</td>
+	</tr>
+</table>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%; page-break-before: always">
+Step 5.2: Local testing step</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<table width="623" cellpadding="7" cellspacing="0">
+	<col width="254"/>
+
+	<col width="339"/>
+
+	<tr valign="top">
+		<td width="254" style="border: 1px solid #000000; padding: 0in 0.08in"><p class="western">
+			Testing using simulator</p>
+		</td>
+		<td width="339" style="border: 1px solid #000000; padding: 0in 0.08in">
+			<ul><li><p style="margin-bottom: 0in">Once the node server (HTTP)
+				has started, you can test the html and node JS code using
+				simulator</p>
+				<li><p style="margin-bottom: 0in">From the above example,
+				navigate to <font color="#0000ff"><u><a href="http://192.168.0.101:8888/simulator/index.html">http://192.168.0.101:8888/simulator/index.html</a></u></font></p>
+				<li><p style="margin-bottom: 0in">In the connector URL, specify
+				../Examples/html/&lt;Your HTML page&gt;</p>
+				<li><p style="margin-bottom: 0in">Click on &ldquo;Start
+				interactive phase&rdquo;</p>
+				<li><p style="margin-bottom: 0in">This will open a new popup
+				window (ensure you allow popups)</p>
+				<li><p style="margin-bottom: 0in">There will be an action button
+				based on the HTML code that you have created. 
+				</p>
+				<li><p style="margin-bottom: 0in">Click on the button and return
+				the control to the main page.</p>
+				<li><p style="margin-bottom: 0in">In the bottom of the page, you
+				can look at &lsquo;Tables&rsquo; section comprising of
+				schema/columns.</p>
+				<li><p style="margin-bottom: 0in">Click on &ldquo;Fetch data&rdquo;</p>
+				<li><p>Verify the data and ensure it is as per the response from
+				API.</p>
+			</ul>
+		</td>
+	</tr>
+</table>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%">Step
+6: Tableau Desktop connectivity</p>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
+<table width="623" cellpadding="7" cellspacing="0">
+	<col width="296"/>
+
+	<col width="297"/>
+
+	<tr valign="top">
+		<td width="296" style="border: 1px solid #000000; padding: 0in 0.08in"><p class="western">
+			WDC Connectivity to Tableau desktop</p>
+		</td>
+		<td width="297" style="border: 1px solid #000000; padding: 0in 0.08in">
+			<ul><li><p style="margin-bottom: 0in">Connect to WDC using Tableau
+				desktop</p>
+				<li><p style="margin-bottom: 0in">Enter the HTML page URL from
+				the webserver</p>
+				<li><p style="margin-bottom: 0in">Fetch the data and create an
+				extract.</p>
+				<li><p><a name="_GoBack"></a>Setup refresh schedules after
+				publishing the data source onto the server.</p>
+			</ul>
+		</td>
+	</tr>
+</table>
+<p class="western" style="margin-bottom: 0.11in; line-height: 108%"><br/>
+<br/>
+
+</p>
 </body>
 </html>
