@@ -2,7 +2,7 @@
 
 This connector allows NY Times best sellers respository to be queried for best selling books / author for each category/genre and each week.
 
-Access the connector [here]( https://github.com/muthukumarsm/NYTimes_Bestsellers/)  and create a pull request for HTML and JS. Documentation for using the connector can also be found in the same repository. 
+The connector is hosted [here]( https://github.com/muthukumarsm/NYTimes_Bestsellers/)  and create a pull request for HTML and JS. Documentation for using the connector can also be found in the same repository. 
 
 ### Support or Contact
 
